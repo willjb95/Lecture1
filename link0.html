@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- link: defines link between a document and an external source -->
+  <!-- rel: specifies the relationship between the current document and the linked one -->
+  <!-- type: this specifies the media type of the linked document -->
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <title>My Web Page!</title>
 </head>
-  <body>
-  <a href="index.html">Click here!</a>
+<body>
+  <div>
+     <h2> Table of Contents</h2>
+     <ul>
+       <li><a href="#section1">What is Hypertext?</a></li>
+       <li><a href="#section2">How do you add links in HTML?</a></li>
+       <li><a href="#section3">Why do we use Hypertext?</a></li>
+     </ul>
+     <h2 id="section1">What is Hypertext?</h2>
+     <p>
+          Hypertext is a computer-based retrievial system that enables a user to access particular
+          locations or files in web pages or other documents by clicking on links within specific
+          web pages or documents.
+     </p>
+     <h2 id="section2">How do you add links in HTML?</h2>
+     <p>
+          To embed a link into a web page, blogpost, or comment, it may take this form:
+          (angle bracket)a href="http://example.com/"Example
+     </p>
+     <h2 id="section3">Why was Hypertext Important?</h2>
+     <p>
+          Hypertext was important because it presented two dunsamental changes in the sotrage
+          and retirval of data. The first was the capability to move rapidily from one part of
+          a document to another by means of associative link?
+     </p>
+   </div>
+
+    <div>
+<!-- <a : is called an anchor and marks the beginning and/or the end of a hypertext link -->
+<!-- href="insert URL" : is an attribute that specifies the url of the page the link goes to -->
+      <h3>Example of a Hypertext Link Below:</h3>
+      <a href="index.html">Click here!</a>
+       </div>
   </body>
 </html>
