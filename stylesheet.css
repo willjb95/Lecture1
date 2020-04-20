@@ -1,11 +1,14 @@
-#section1 {
+#section1,
+#paragraph1 {
   color: blue;
 }
 
-#section2 {
+#section2,
+#paragraph2 {
   color: red;
 }
 
-#section3 {
+#section3,
+#paragraph3 {
   color: green;
 }
