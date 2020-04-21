@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web Page!</title>
+  <style>
+  /* @media print: specifiying I only want to apply this styling when its being viewed via print
+  .screen-only: take any class that is screen only and set its display to none when viewing from print
+  so its not visable */
+  @media print {
+    .screen-only {
+      display: none;
+    }
+  }
+  /* .: specifies that you want a class to be defined so in my case p1 was the class I want to style */
+  /* content: this the the css value for a bullet point */
+   .p1::before {
+     content: "\2022 ";
+     margin: 20px;
+   }
+  </style>
+</head>
+<body>
+  <h1>This is web page is for testing responsive design!</h1>
+  <p class="p1">Responsive Design is the idea that a website should look good regardless
+     of the platform it's viewed from</p>
+  <!-- class="screen-only": giving this paragrapgh a class name so i can easily refer to it in
+  other parts of my Web page -->
+        <p>This is a paragraph I want to show up when I print this web page out</p>
+        <p class="screen-only">This text won't appear when you print this web page out</p>
+</body>
+</html>
