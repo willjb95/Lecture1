@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page!</title>
+        <!-- viewport: this is the visable area of my webpage -->
+        <!-- width=device-width: makes sure we scale it to the width of the actual device
+             which will help to prevent text from appearing really small. A good first step
+            to make it mobile responsive.  -->
+        <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+        <style>
+          /* this specifies which class and then it will display as flex-wrap which
+          means it will fit into the width of thw device window you are viewing it on */
+
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          /* any div that is the child of the container will now have these properties
+           listed below */
+
+          .container > div {
+            background-color: springgreen;
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+          }
+          </style>
+    </head>
+      <body>
+        <div class="container">
+          <div>The average person will spend six months of their life waiting for red lights to turn green.</div>
+          <div>A bolt of lightning contains enough energy to toast 100,000 slices of bread.</div>
+          <div>Nearly 30,000 rubber ducks were lost a sea in 1992 and are still being discovered today.</div>
+          <div>The inventor of the frisbee was turned into a frisbee after he died.</div>
+          <div>Instead of saying "cheese" before taking a picture, Victorians said "prunes."</div>
+          </div>
+      </body>
+</html>
