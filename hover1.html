@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>My Web Page!</title>
+      <style>
+      /* this is setting the style for the button  */
+      button {
+        width: 200px;
+        height: 50px;
+        font-size: 24px;
+        background-color: green;
+      }
+      /* when a pointer is hovering over the button the background color will change to said color */
+      button:hover {
+        background-color:orange;
+      }
+      /* this is a pseudoelement selector,
+      a: this is to show what part we want effect so <anchor would be affected
+      content: this is the content in which you want to appear before or after
+      \21d2 is a hex value for a symbol which we can't create through usual means e.g keyboard */
+      a::before {
+        content: "Click here \21d2 ";
+        font-weight: bold;
+      }
+      /* p: to show which part we want affected so the <paragrapgh> tag
+      selection: when you highlight over text the color and background color will change  */
+      p::selection {
+        color: red;
+        background-color: yellow;
+      }
+      </style>
+    </head>
+    <body>
+      <div>
+          <button>Click Me!</button>
+      </div>
+      <ul>
+        <li><a href="#">First Link</a></li>
+        <li><a href="#">Second Link</a></li>
+        <li><a href="#">Third Link</a></li>
+      </ul>
+      <div>
+        <p>
+          Pseudo elements are used to add style in specified parts of an element. You can use "::before"
+          to add some css property before an element or "::after" to add css propertys after.
+        </p>
+    </body>
+</html>
